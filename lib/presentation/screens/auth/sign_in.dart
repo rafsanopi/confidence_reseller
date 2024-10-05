@@ -18,7 +18,6 @@ class SignInScreen extends StatelessWidget {
   final AuthController authController = Get.find<AuthController>();
   @override
   Widget build(BuildContext context) {
-    print(context.height);
     return Scaffold(
       body: Stack(
         //  clipBehavior: Clip.none,
@@ -70,9 +69,7 @@ class SignInScreen extends StatelessWidget {
 
                     //============================ Log In Button ========================
                     CustomButton(
-                      onTap: () {
-                        print("object");
-                      },
+                      onTap: () {},
                       title: AppStrings.logIn,
                     ),
                     10.heightWidth,
@@ -80,9 +77,7 @@ class SignInScreen extends StatelessWidget {
                     //============================ Forgot Password ========================
 
                     TextButton(
-                      onPressed: () {
-                        print("object");
-                      },
+                      onPressed: () {},
                       child: CustomText(
                         text: AppStrings.forgotPass,
                         color: AppColors.blueColor,

@@ -25,7 +25,7 @@ Widget stackCardPosition(
       alignment: Alignment.center,
       children: [
         Positioned(
-          top: context.width / 2,
+          top: context.height / 3.5,
           left: 20, // Added to stretch from the left
           right: 20, // Added to stretch to the right
           child: Container(

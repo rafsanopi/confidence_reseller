@@ -80,17 +80,17 @@ final InputDecorationTheme inputDecorationTheme = InputDecorationTheme(
         fontSize: 12.w));
 
 //=========================== App Bar =============================
-final AppBarTheme appBarTheme = AppBarTheme(
+const AppBarTheme appBarTheme = AppBarTheme(
   //color:CustomColor.kPrimaryColorx,
 
   elevation: 0,
   centerTitle: true,
-  iconTheme: const IconThemeData(color: AppColors.blackColor),
+  iconTheme: IconThemeData(color: AppColors.blackColor),
   backgroundColor: AppColors.whiteColor,
   scrolledUnderElevation: 0,
   //titleTextStyle: interMedium.copyWith(fontSize: 16.sp, color: black),
-  actionsIconTheme: const IconThemeData(color: AppColors.blackColor),
-  systemOverlayStyle: const SystemUiOverlayStyle(
+  actionsIconTheme: IconThemeData(color: AppColors.blackColor),
+  systemOverlayStyle: SystemUiOverlayStyle(
     // Status bar color
 
     statusBarColor: AppColors.whiteColor,
