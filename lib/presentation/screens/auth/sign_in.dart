@@ -1,3 +1,4 @@
+import 'package:confidence_reseller/core/routes/route_path.dart';
 import 'package:confidence_reseller/global/custom_assets/assets.gen.dart';
 import 'package:confidence_reseller/helper/extention/extention.dart';
 import 'package:confidence_reseller/presentation/screens/auth/auth_controller/auth_controller.dart';
@@ -11,6 +12,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:confidence_reseller/utils/static_strings/static_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 
 class SignInScreen extends StatelessWidget {
   SignInScreen({super.key});
@@ -41,6 +43,7 @@ class SignInScreen extends StatelessWidget {
           ),
 
           stackCardPosition(
+              top: context.height / 3.5,
               cardHeight: context.height >= 783
                   ? context.height / 1.9
                   : context.height / 1.6,
@@ -110,7 +113,9 @@ class SignInScreen extends StatelessWidget {
                       children: [
                         const CustomText(text: AppStrings.noAccount),
                         TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            context.pushNamed(RoutePath.chooseAccountType);
+                          },
                           child: const CustomText(
                             text: AppStrings.register,
                             color: AppColors.blueColor,

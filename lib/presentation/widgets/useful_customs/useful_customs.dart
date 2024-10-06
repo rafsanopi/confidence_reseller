@@ -20,21 +20,24 @@ Widget gradientBackgroundWidget(
 Widget stackCardPosition(
         {required Widget child,
         required BuildContext context,
-        required double cardHeight}) =>
+        required double cardHeight,
+        required double top,
+        Color borderColor = AppColors.whiteColor}) =>
     Stack(
       alignment: Alignment.center,
       children: [
         Positioned(
-          top: context.height / 3.5,
+          top: top,
           left: 20, // Added to stretch from the left
           right: 20, // Added to stretch to the right
           child: Container(
             padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 20.h),
-            height: cardHeight,
+            height: cardHeight == 0 ? null : cardHeight,
             width: double.maxFinite,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(16.r),
               color: AppColors.whiteColor,
+              border: Border.all(color: borderColor),
               boxShadow: [
                 BoxShadow(
                   color: AppColors.blackColor.withOpacity(0.1),

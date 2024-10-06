@@ -13,6 +13,7 @@ class RoutePath {
   static const String resetPass = 'resetPass';
   static const String varification = 'varification';
   static const String signUp = 'signUp';
+  static const String chooseAccountType = 'chooseAccountType';
 
   //=================== Auth screens ===================
   static const String homeScreen = 'homeScreen';
