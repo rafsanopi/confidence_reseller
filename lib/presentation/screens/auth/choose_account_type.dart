@@ -17,7 +17,11 @@ class ChooseAccountType extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double totalHeight = context.height + (context.height * .4);
+    print(context.height);
+    final double totalHeight = context.height >= 790
+        ? context.height + (context.height * .3)
+        : context.height + (context.height * .4);
+
     return Scaffold(
         // Use a Container with gradient decoration as the background
         body: SingleChildScrollView(
@@ -58,7 +62,9 @@ class ChooseAccountType extends StatelessWidget {
             // ================== Free Reseller Account Card =====================
 
             accountCard(
-              top: context.height / 1.22,
+              top: context.height >= 790
+                  ? context.height / 1.3
+                  : context.height / 1.22,
               assetWidget: Assets.icons.free.image(),
               context: context,
               title: AppStrings.normalReseller, // Change title if different
@@ -83,7 +89,8 @@ class ChooseAccountType extends StatelessWidget {
   }) {
     return stackCardPosition(
       borderColor: AppColors.blackColor,
-      cardHeight: context.height / 2,
+      cardHeight:
+          context.height >= 790 ? context.height / 2.3 : context.height / 2,
       top: top,
       context: context,
       child: Column(

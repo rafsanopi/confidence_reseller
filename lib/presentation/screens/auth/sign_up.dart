@@ -18,7 +18,9 @@ class SignUpScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double totalHeight = context.height * 2 - (context.height / 4);
+    final double totalHeight = context.height >= 790
+        ? context.height * 2 - (context.height / 2.2)
+        : context.height * 2 - (context.height / 4);
     return Scaffold(
       body: SingleChildScrollView(
         child: SizedBox(
