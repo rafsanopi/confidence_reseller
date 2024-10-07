@@ -17,7 +17,6 @@ class ChooseAccountType extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print(context.height);
     final double totalHeight = context.height >= 790
         ? context.height + (context.height * .3)
         : context.height + (context.height * .4);

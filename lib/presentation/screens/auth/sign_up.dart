@@ -196,7 +196,9 @@ class SignUpScreen extends StatelessWidget {
                     // =================== Submit/Sign Up Button ===================
                     CustomButton(
                       marginVerticel: 20.h,
-                      onTap: () {},
+                      onTap: () {
+                        context.pushNamed(RoutePath.varification);
+                      },
                       title: AppStrings.submitNow,
                     ),
 

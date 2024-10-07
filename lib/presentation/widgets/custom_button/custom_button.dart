@@ -5,29 +5,30 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({
-    super.key,
-    this.height = 44,
-    this.width = double.maxFinite,
-    required this.onTap,
-    this.title = "",
-    this.marginVerticel = 0,
-    this.marginHorizontal = 0,
-    // this.fillColor = AppColors.primaryColor,
-    this.textColor = AppColors.whiteColor,
-    // this.borderColor = AppColors.primaryColor
-  });
+  const CustomButton(
+      {super.key,
+      this.height = 44,
+      this.width = double.maxFinite,
+      required this.onTap,
+      this.title = "",
+      this.marginVerticel = 0,
+      this.marginHorizontal = 0,
+      // this.fillColor = AppColors.primaryColor,
+      this.textColor = AppColors.whiteColor,
+      this.gradient = AppColors.primaryGradientColor,
+      this.borderColor = Colors.transparent});
 
   final double height;
   final double width;
   //final Color fillColor;
-//  final Color borderColor;
+  final Color borderColor;
 
   final Color textColor;
 
   final VoidCallback onTap;
 
   final String title;
+  final Gradient gradient;
 
   final double marginVerticel;
   final double marginHorizontal;
@@ -45,9 +46,9 @@ class CustomButton extends StatelessWidget {
         height: height,
         width: width,
         decoration: BoxDecoration(
-            // border: Border.all(color: borderColor),
+            border: Border.all(color: borderColor),
             borderRadius: BorderRadius.circular(8.r),
-            gradient: AppColors.primaryGradientColor),
+            gradient: gradient),
         child: CustomText(
             fontWeight: FontWeight.w500,
             color: textColor,

@@ -33,6 +33,7 @@ dependencies:
   feup_plotter: ^0.0.4
   flutter:
     sdk: flutter
+  flutter_popup: ^3.3.0
   flutter_screenutil: ^5.9.3
   gap: ^3.0.1
   get: ^4.6.6
@@ -43,6 +44,7 @@ dependencies:
   internet_connection_checker_plus: ^2.5.2
   logger: ^2.4.0
   lottie: ^3.1.2
+  pin_code_fields: ^8.0.1
   shimmer: ^3.0.0
 
 dev_dependencies:

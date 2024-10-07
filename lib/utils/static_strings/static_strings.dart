@@ -45,4 +45,12 @@ class AppStrings {
   static const String submitNow = "সাবমিট করুন";
   static const String haveAAccount = "অ্যাকাউন্ট  আছে!";
   static const String logInNow = "লগইন করুন";
+
+  static const String weHaveSendACode =
+      "আপনার দেয়া ফোন নাম্বারটিতে ছয় ডিজিটের কোড পাঠানো হয়েছে";
+  static const String sendAgain = "আবার পাঠান";
+  static const String confirn = "নিশ্চিত করুন";
+
+  static const String congrates = "অভিনন্দন";
+  static const String registrasionSuccess = "আপনার রেজিস্ট্রেশন সফল হয়েছে।";
 }
