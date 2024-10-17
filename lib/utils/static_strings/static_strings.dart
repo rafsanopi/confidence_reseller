@@ -59,4 +59,20 @@ class AppStrings {
   static const String newProduct = "নতুন প্রোডাক্ট";
   static const String profit = "প্রফিট";
   static const String profile = "প্রোফাইল";
+
+  /// ====================== Home Screen ==========================
+  static const String socialLink = "সোশ্যাল লিংক";
+  static const String noticeBoard = "নোটিশ বোর্ড";
+  static const String varifyProcess =
+      "যাচাই প্রক্রিয়া: বিক্রেতা / পেশাদার বিক্রেতা হওয়ার জন্য যাচাই পদক্ষেপ নির্ধারণ করুন, যেমন পরিচয় যাচাই, ব্যবসায়িক যাচাই এবং কর তথ্য যাচাই";
+  static const String moredetails = "বিস্তারিত...";
+  static const String resellingProduct = "রিসেলিং প্রোডাক্ট";
+  static const String productSearch = "প্রোডাক্ট সার্চ";
+  static const String ecommerce = "ই- কমার্স";
+  static const String pasivIncome = "প্যাসিভ রেভিনিউ";
+  static const String varifiedProduct = "ভেরিফাইড প্রোডাক্ট";
+  static const String mobileRechare = "মোবাইল রিচার্জ";
+  static const String leaderShip = "লিডারশীপ";
+  static const String supportCenter = "সাপোর্ট সেন্টার";
+  static const String faq = "এফ এ কিউ";
 }

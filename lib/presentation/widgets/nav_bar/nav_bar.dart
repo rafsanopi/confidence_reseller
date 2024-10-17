@@ -4,7 +4,6 @@ import 'package:confidence_reseller/presentation/widgets/custom_text/custom_text
 import 'package:confidence_reseller/utils/app_colors/app_colors.dart';
 import 'package:confidence_reseller/utils/static_strings/static_strings.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 

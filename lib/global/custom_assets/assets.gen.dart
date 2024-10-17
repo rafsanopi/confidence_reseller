@@ -55,9 +55,17 @@ class $AssetsIconsGen {
   /// File path: assets/icons/logo.png
   AssetGenImage get logo => const AssetGenImage('assets/icons/logo.png');
 
+  /// File path: assets/icons/logoGreen.png
+  AssetGenImage get logoGreen =>
+      const AssetGenImage('assets/icons/logoGreen.png');
+
   /// File path: assets/icons/mobileRecharge.svg
   SvgGenImage get mobileRecharge =>
       const SvgGenImage('assets/icons/mobileRecharge.svg');
+
+  /// File path: assets/icons/moneyBox.png
+  AssetGenImage get moneyBox =>
+      const AssetGenImage('assets/icons/moneyBox.png');
 
   /// File path: assets/icons/newProSelected.svg
   SvgGenImage get newProSelected =>
@@ -144,7 +152,9 @@ class $AssetsIconsGen {
         homeUnselected,
         leaderShip,
         logo,
+        logoGreen,
         mobileRecharge,
+        moneyBox,
         newProSelected,
         newProUnselected,
         notificationOrange,

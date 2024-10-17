@@ -67,7 +67,7 @@ class AppRouter {
         GoRoute(
             name: RoutePath.homeScreen,
             path: RoutePath.homeScreen.addBasePath,
-            builder: (context, state) => const HomeScreen()),
+            builder: (context, state) => HomeScreen()),
 
         ///======================= New Products Screen Route =======================
 
