@@ -1,13 +1,14 @@
 import 'package:confidence_reseller/presentation/widgets/nav_bar/nav_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class ProfitScreen extends StatelessWidget {
+  const ProfitScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      bottomNavigationBar: NavBarScreen(currentIndex: 0),
+      bottomNavigationBar: NavBarScreen(currentIndex: 2),
     );
   }
 }

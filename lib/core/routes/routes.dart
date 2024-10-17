@@ -4,6 +4,10 @@ import 'package:confidence_reseller/presentation/screens/auth/choose_account_typ
 import 'package:confidence_reseller/presentation/screens/auth/otp_varification.dart';
 import 'package:confidence_reseller/presentation/screens/auth/sign_in.dart';
 import 'package:confidence_reseller/presentation/screens/auth/sign_up.dart';
+import 'package:confidence_reseller/presentation/screens/home/home.dart';
+import 'package:confidence_reseller/presentation/screens/new_product/new_product.dart';
+import 'package:confidence_reseller/presentation/screens/profile/profile.dart';
+import 'package:confidence_reseller/presentation/screens/profit/profit.dart';
 import 'package:confidence_reseller/presentation/screens/splash_screen/splash_screen.dart';
 import 'package:confidence_reseller/presentation/widgets/error_screen/error_screen.dart';
 import 'package:go_router/go_router.dart';
@@ -57,6 +61,34 @@ class AppRouter {
             name: RoutePath.varification,
             path: RoutePath.varification.addBasePath,
             builder: (context, state) => const OtpVarification()),
+
+        ///======================= Home Screen Route =======================
+
+        GoRoute(
+            name: RoutePath.homeScreen,
+            path: RoutePath.homeScreen.addBasePath,
+            builder: (context, state) => const HomeScreen()),
+
+        ///======================= New Products Screen Route =======================
+
+        GoRoute(
+            name: RoutePath.newProducts,
+            path: RoutePath.newProducts.addBasePath,
+            builder: (context, state) => const NewProductScreen()),
+
+        ///======================= Profit Route =======================
+
+        GoRoute(
+            name: RoutePath.profit,
+            path: RoutePath.profit.addBasePath,
+            builder: (context, state) => const ProfitScreen()),
+
+        ///======================= Profile Route =======================
+
+        GoRoute(
+            name: RoutePath.profile,
+            path: RoutePath.profile.addBasePath,
+            builder: (context, state) => const ProfileScreen()),
       ]);
 
   static GoRouter get route => initRoute;

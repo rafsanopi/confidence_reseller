@@ -72,7 +72,9 @@ class SignInScreen extends StatelessWidget {
 
                     //============================ Log In Button ========================
                     CustomButton(
-                      onTap: () {},
+                      onTap: () {
+                        context.pushReplacementNamed(RoutePath.homeScreen);
+                      },
                       title: AppStrings.logIn,
                     ),
                     10.heightWidth,

@@ -15,6 +15,10 @@ class RoutePath {
   static const String signUp = 'signUp';
   static const String chooseAccountType = 'chooseAccountType';
 
-  //=================== Auth screens ===================
+  //=================== Nav screens ===================
   static const String homeScreen = 'homeScreen';
+  static const String newProducts = 'newProducts';
+  static const String profit = 'profit';
+  static const String profile = 'profile';
+
 }

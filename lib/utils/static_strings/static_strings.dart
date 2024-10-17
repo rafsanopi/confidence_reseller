@@ -53,4 +53,10 @@ class AppStrings {
 
   static const String congrates = "অভিনন্দন";
   static const String registrasionSuccess = "আপনার রেজিস্ট্রেশন সফল হয়েছে।";
+
+  /// ====================== NavBar Screen ==========================
+  static const String home = "হোম";
+  static const String newProduct = "নতুন প্রোডাক্ট";
+  static const String profit = "প্রফিট";
+  static const String profile = "প্রোফাইল";
 }
