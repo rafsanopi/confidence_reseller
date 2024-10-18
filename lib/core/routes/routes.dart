@@ -74,14 +74,14 @@ class AppRouter {
         GoRoute(
             name: RoutePath.newProducts,
             path: RoutePath.newProducts.addBasePath,
-            builder: (context, state) => const NewProductScreen()),
+            builder: (context, state) => NewProductScreen()),
 
         ///======================= Profit Route =======================
 
         GoRoute(
             name: RoutePath.profit,
             path: RoutePath.profit.addBasePath,
-            builder: (context, state) => const ProfitScreen()),
+            builder: (context, state) => ProfitScreen()),
 
         ///======================= Profile Route =======================
 

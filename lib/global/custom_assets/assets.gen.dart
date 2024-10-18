@@ -20,15 +20,29 @@ class $AssetsIconsGen {
   AssetGenImage get bannerImg =>
       const AssetGenImage('assets/icons/bannerImg.png');
 
+  /// File path: assets/icons/clock.svg
+  SvgGenImage get clock => const SvgGenImage('assets/icons/clock.svg');
+
   /// File path: assets/icons/clockRed.png
   AssetGenImage get clockRed =>
       const AssetGenImage('assets/icons/clockRed.png');
+
+  /// File path: assets/icons/copy.svg
+  SvgGenImage get copy => const SvgGenImage('assets/icons/copy.svg');
+
+  /// File path: assets/icons/download.png
+  AssetGenImage get download =>
+      const AssetGenImage('assets/icons/download.png');
 
   /// File path: assets/icons/ecommerce.svg
   SvgGenImage get ecommerce => const SvgGenImage('assets/icons/ecommerce.svg');
 
   /// File path: assets/icons/faq.svg
   SvgGenImage get faq => const SvgGenImage('assets/icons/faq.svg');
+
+  /// File path: assets/icons/favouUnselected.png
+  AssetGenImage get favouUnselected =>
+      const AssetGenImage('assets/icons/favouUnselected.png');
 
   /// File path: assets/icons/fb.png
   AssetGenImage get fb => const AssetGenImage('assets/icons/fb.png');
@@ -105,6 +119,10 @@ class $AssetsIconsGen {
   SvgGenImage get profitUnselected =>
       const SvgGenImage('assets/icons/profitUnselected.svg');
 
+  /// File path: assets/icons/resellerBlackLogo.jpg
+  AssetGenImage get resellerBlackLogo =>
+      const AssetGenImage('assets/icons/resellerBlackLogo.jpg');
+
   /// File path: assets/icons/reseller_pro.svg
   SvgGenImage get resellerPro =>
       const SvgGenImage('assets/icons/reseller_pro.svg');
@@ -142,9 +160,13 @@ class $AssetsIconsGen {
   /// List of all assets
   List<dynamic> get values => [
         bannerImg,
+        clock,
         clockRed,
+        copy,
+        download,
         ecommerce,
         faq,
+        favouUnselected,
         fb,
         free,
         galaryIcon,
@@ -165,6 +187,7 @@ class $AssetsIconsGen {
         profile,
         profitSelected,
         profitUnselected,
+        resellerBlackLogo,
         resellerPro,
         resellingProduct,
         supportPng,
@@ -183,8 +206,16 @@ class $AssetsImagesGen {
   /// File path: assets/images/banner1.png
   AssetGenImage get banner1 => const AssetGenImage('assets/images/banner1.png');
 
+  /// File path: assets/images/product1.png
+  AssetGenImage get product1 =>
+      const AssetGenImage('assets/images/product1.png');
+
+  /// File path: assets/images/product2.png
+  AssetGenImage get product2 =>
+      const AssetGenImage('assets/images/product2.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [banner1];
+  List<AssetGenImage> get values => [banner1, product1, product2];
 }
 
 class $AssetsLotteGen {

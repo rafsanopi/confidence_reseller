@@ -77,4 +77,11 @@ class AppStrings {
   static const String faq = "এফ এ কিউ";
   static const String icon = "icon";
   static const String text = "text";
+
+  /// ====================== New Product Screen ==========================
+  static const String selectCategory = "Select Category";
+  static const String seeMore = "আরো দেখুন";
+  static const String seeLess = "ফিরে যান";
+  static const String copy = "কপি";
+  //static const String icon = "icon";
 }
