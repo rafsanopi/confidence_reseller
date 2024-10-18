@@ -4,6 +4,12 @@ class AppColors {
   static const blackColor = Color(0xff5B5C5F);
   static const orangeColor = Color(0xffFF9900);
 
+  static const pinkColor = Color(0xffEB5BCC);
+  static const indegoColor = Color(0xffBE56FB);
+  static const blueDeepColor = Color(0xff3A8CCF);
+  static const skyColor = Color(0xff27ADC5);
+  static const greenLightColor = Color(0xff7DC174);
+
   static const redColor = Color(0xffFF0025);
   static const blueColor = Color(0xff1677FF);
   static const blueLightColor = Color(0xffE8F1FF);

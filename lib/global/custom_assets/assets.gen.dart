@@ -16,6 +16,9 @@ import 'package:vector_graphics/vector_graphics.dart' as _vg;
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/balance.svg
+  SvgGenImage get balance => const SvgGenImage('assets/icons/balance.svg');
+
   /// File path: assets/icons/bannerImg.png
   AssetGenImage get bannerImg =>
       const AssetGenImage('assets/icons/bannerImg.png');
@@ -61,6 +64,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/homeUnselected.svg
   SvgGenImage get homeUnselected =>
       const SvgGenImage('assets/icons/homeUnselected.svg');
+
+  /// File path: assets/icons/income.svg
+  SvgGenImage get income => const SvgGenImage('assets/icons/income.svg');
 
   /// File path: assets/icons/leaderShip.svg
   SvgGenImage get leaderShip =>
@@ -123,6 +129,10 @@ class $AssetsIconsGen {
   AssetGenImage get resellerBlackLogo =>
       const AssetGenImage('assets/icons/resellerBlackLogo.jpg');
 
+  /// File path: assets/icons/resellerProRuls.svg
+  SvgGenImage get resellerProRuls =>
+      const SvgGenImage('assets/icons/resellerProRuls.svg');
+
   /// File path: assets/icons/reseller_pro.svg
   SvgGenImage get resellerPro =>
       const SvgGenImage('assets/icons/reseller_pro.svg');
@@ -131,12 +141,18 @@ class $AssetsIconsGen {
   SvgGenImage get resellingProduct =>
       const SvgGenImage('assets/icons/resellingProduct.svg');
 
+  /// File path: assets/icons/sell.svg
+  SvgGenImage get sell => const SvgGenImage('assets/icons/sell.svg');
+
   /// File path: assets/icons/support.png
   AssetGenImage get supportPng =>
       const AssetGenImage('assets/icons/support.png');
 
   /// File path: assets/icons/support.svg
   SvgGenImage get supportSvg => const SvgGenImage('assets/icons/support.svg');
+
+  /// File path: assets/icons/team.svg
+  SvgGenImage get team => const SvgGenImage('assets/icons/team.svg');
 
   /// File path: assets/icons/telegram.png
   AssetGenImage get telegram =>
@@ -159,6 +175,7 @@ class $AssetsIconsGen {
 
   /// List of all assets
   List<dynamic> get values => [
+        balance,
         bannerImg,
         clock,
         clockRed,
@@ -172,6 +189,7 @@ class $AssetsIconsGen {
         galaryIcon,
         homeSelected,
         homeUnselected,
+        income,
         leaderShip,
         logo,
         logoGreen,
@@ -188,10 +206,13 @@ class $AssetsIconsGen {
         profitSelected,
         profitUnselected,
         resellerBlackLogo,
+        resellerProRuls,
         resellerPro,
         resellingProduct,
+        sell,
         supportPng,
         supportSvg,
+        team,
         telegram,
         varifiedProduct,
         whatsApp,
@@ -214,8 +235,11 @@ class $AssetsImagesGen {
   AssetGenImage get product2 =>
       const AssetGenImage('assets/images/product2.png');
 
+  /// File path: assets/images/profit.png
+  AssetGenImage get profit => const AssetGenImage('assets/images/profit.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [banner1, product1, product2];
+  List<AssetGenImage> get values => [banner1, product1, product2, profit];
 }
 
 class $AssetsLotteGen {

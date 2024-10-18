@@ -83,5 +83,12 @@ class AppStrings {
   static const String seeMore = "আরো দেখুন";
   static const String seeLess = "ফিরে যান";
   static const String copy = "কপি";
-  //static const String icon = "icon";
+
+  /// ====================== Profit Screen ==========================
+
+  static const String incomeFromTeam = "টিম থেকে ইনকাম";
+  static const String incomeSummary = "ইনকাম সামারি";
+  static const String sellAndProfit = "বিক্রি এবং মুনাফা";
+  static const String balanceStatement = "ব্যালেন্স স্টেটমেন্ট";
+  static const String resellerProRules = "রিসেলার প্রো নীতিমালা";
 }
