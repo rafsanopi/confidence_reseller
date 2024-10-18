@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         //title: 'IHB',
         theme: lightTheme,
         defaultTransition: Transition.noTransition,
-        transitionDuration: const Duration(milliseconds: 200),
+        transitionDuration: const Duration(milliseconds: 0),
         // darkTheme:CustomTheme.darkTheme, // standard dark theme
         //themeMode: lightTheme,
         routeInformationParser: AppRouter.route.routeInformationParser,

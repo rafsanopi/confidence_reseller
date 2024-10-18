@@ -75,4 +75,6 @@ class AppStrings {
   static const String leaderShip = "লিডারশীপ";
   static const String supportCenter = "সাপোর্ট সেন্টার";
   static const String faq = "এফ এ কিউ";
+  static const String icon = "icon";
+  static const String text = "text";
 }

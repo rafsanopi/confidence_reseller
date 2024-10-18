@@ -98,13 +98,13 @@ class _NavBarScreenState extends State<NavBarScreen> {
 
   void onTap(int index) {
     if (index == 0 && widget.currentIndex != 0) {
-      context.goNamed(RoutePath.homeScreen);
+      context.pushReplacementNamed(RoutePath.homeScreen);
     } else if (index == 1 && widget.currentIndex != 1) {
-      context.goNamed(RoutePath.newProducts);
+      context.pushReplacementNamed(RoutePath.newProducts);
     } else if (index == 2 && widget.currentIndex != 2) {
-      context.goNamed(RoutePath.profit);
+      context.pushReplacementNamed(RoutePath.profit);
     } else if (index == 3 && widget.currentIndex != 3) {
-      context.goNamed(RoutePath.profile);
+      context.pushReplacementNamed(RoutePath.profile);
     }
   }
 }
