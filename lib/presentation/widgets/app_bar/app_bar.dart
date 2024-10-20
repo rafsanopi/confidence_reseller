@@ -19,7 +19,9 @@ class CustomAppBar extends StatelessWidget {
         children: [
           /// ==================== Menu Button ======================
           IconButton(
-              onPressed: () {},
+              onPressed: () {
+                scaffoldKey.currentState?.openDrawer();
+              },
               icon: const Icon(
                 Icons.menu,
                 color: AppColors.primaryColor,

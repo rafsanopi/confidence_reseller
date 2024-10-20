@@ -16,12 +16,18 @@ import 'package:vector_graphics/vector_graphics.dart' as _vg;
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/addWallet.svg
+  SvgGenImage get addWallet => const SvgGenImage('assets/icons/addWallet.svg');
+
   /// File path: assets/icons/balance.svg
   SvgGenImage get balance => const SvgGenImage('assets/icons/balance.svg');
 
   /// File path: assets/icons/bannerImg.png
   AssetGenImage get bannerImg =>
       const AssetGenImage('assets/icons/bannerImg.png');
+
+  /// File path: assets/icons/cartList.svg
+  SvgGenImage get cartList => const SvgGenImage('assets/icons/cartList.svg');
 
   /// File path: assets/icons/clock.svg
   SvgGenImage get clock => const SvgGenImage('assets/icons/clock.svg');
@@ -46,6 +52,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/favouUnselected.png
   AssetGenImage get favouUnselected =>
       const AssetGenImage('assets/icons/favouUnselected.png');
+
+  /// File path: assets/icons/favourite.svg
+  SvgGenImage get favourite => const SvgGenImage('assets/icons/favourite.svg');
 
   /// File path: assets/icons/fb.png
   AssetGenImage get fb => const AssetGenImage('assets/icons/fb.png');
@@ -72,6 +81,9 @@ class $AssetsIconsGen {
   SvgGenImage get leaderShip =>
       const SvgGenImage('assets/icons/leaderShip.svg');
 
+  /// File path: assets/icons/logOut.svg
+  SvgGenImage get logOut => const SvgGenImage('assets/icons/logOut.svg');
+
   /// File path: assets/icons/logo.png
   AssetGenImage get logo => const AssetGenImage('assets/icons/logo.png');
 
@@ -87,6 +99,10 @@ class $AssetsIconsGen {
   AssetGenImage get moneyBox =>
       const AssetGenImage('assets/icons/moneyBox.png');
 
+  /// File path: assets/icons/moneyWithdrow.svg
+  SvgGenImage get moneyWithdrow =>
+      const SvgGenImage('assets/icons/moneyWithdrow.svg');
+
   /// File path: assets/icons/newProSelected.svg
   SvgGenImage get newProSelected =>
       const SvgGenImage('assets/icons/newProSelected.svg');
@@ -98,6 +114,13 @@ class $AssetsIconsGen {
   /// File path: assets/icons/notificationOrange.svg
   SvgGenImage get notificationOrange =>
       const SvgGenImage('assets/icons/notificationOrange.svg');
+
+  /// File path: assets/icons/notificationWhite.svg
+  SvgGenImage get notificationWhite =>
+      const SvgGenImage('assets/icons/notificationWhite.svg');
+
+  /// File path: assets/icons/orderList.svg
+  SvgGenImage get orderList => const SvgGenImage('assets/icons/orderList.svg');
 
   /// File path: assets/icons/passiveIncome.svg
   SvgGenImage get passiveIncome =>
@@ -113,6 +136,10 @@ class $AssetsIconsGen {
   /// File path: assets/icons/product_search.svg
   SvgGenImage get productSearch =>
       const SvgGenImage('assets/icons/product_search.svg');
+
+  /// File path: assets/icons/product_video.svg
+  SvgGenImage get productVideo =>
+      const SvgGenImage('assets/icons/product_video.svg');
 
   /// File path: assets/icons/profile.png
   AssetGenImage get profile => const AssetGenImage('assets/icons/profile.png');
@@ -144,6 +171,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/sell.svg
   SvgGenImage get sell => const SvgGenImage('assets/icons/sell.svg');
 
+  /// File path: assets/icons/stockOut.svg
+  SvgGenImage get stockOut => const SvgGenImage('assets/icons/stockOut.svg');
+
   /// File path: assets/icons/support.png
   AssetGenImage get supportPng =>
       const AssetGenImage('assets/icons/support.png');
@@ -153,6 +183,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/team.svg
   SvgGenImage get team => const SvgGenImage('assets/icons/team.svg');
+
+  /// File path: assets/icons/teamInfo.svg
+  SvgGenImage get teamInfo => const SvgGenImage('assets/icons/teamInfo.svg');
 
   /// File path: assets/icons/telegram.png
   AssetGenImage get telegram =>
@@ -166,6 +199,10 @@ class $AssetsIconsGen {
   AssetGenImage get whatsApp =>
       const AssetGenImage('assets/icons/whatsApp.png');
 
+  /// File path: assets/icons/withdrowHistory.svg
+  SvgGenImage get withdrowHistory =>
+      const SvgGenImage('assets/icons/withdrowHistory.svg');
+
   /// File path: assets/icons/worrningRed.png
   AssetGenImage get worrningRed =>
       const AssetGenImage('assets/icons/worrningRed.png');
@@ -175,8 +212,10 @@ class $AssetsIconsGen {
 
   /// List of all assets
   List<dynamic> get values => [
+        addWallet,
         balance,
         bannerImg,
+        cartList,
         clock,
         clockRed,
         copy,
@@ -184,6 +223,7 @@ class $AssetsIconsGen {
         ecommerce,
         faq,
         favouUnselected,
+        favourite,
         fb,
         free,
         galaryIcon,
@@ -191,17 +231,22 @@ class $AssetsIconsGen {
         homeUnselected,
         income,
         leaderShip,
+        logOut,
         logo,
         logoGreen,
         mobileRecharge,
         moneyBox,
+        moneyWithdrow,
         newProSelected,
         newProUnselected,
         notificationOrange,
+        notificationWhite,
+        orderList,
         passiveIncome,
         premium,
         premiumLogo,
         productSearch,
+        productVideo,
         profile,
         profitSelected,
         profitUnselected,
@@ -210,12 +255,15 @@ class $AssetsIconsGen {
         resellerPro,
         resellingProduct,
         sell,
+        stockOut,
         supportPng,
         supportSvg,
         team,
+        teamInfo,
         telegram,
         varifiedProduct,
         whatsApp,
+        withdrowHistory,
         worrningRed,
         yt
       ];

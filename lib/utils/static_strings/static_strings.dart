@@ -91,4 +91,17 @@ class AppStrings {
   static const String sellAndProfit = "বিক্রি এবং মুনাফা";
   static const String balanceStatement = "ব্যালেন্স স্টেটমেন্ট";
   static const String resellerProRules = "রিসেলার প্রো নীতিমালা";
+
+  /// ====================== Side Drawer Design ==========================
+  static const String notification = "নোটিফিকেশন";
+  static const String productVideo = "প্রোডাক্ট ভিডিও";
+  static const String favouritePro = "ফেভরিট প্রোডাক্ট";
+  static const String stockOutPro = "স্টকআউট প্রোডাক্ট";
+  static const String orderList = "অর্ডার লিস্ট";
+  static const String cartList = "কার্ট লিস্ট";
+  static const String addWallet = "অ্যাড ওয়ালেট";
+  static const String moneyWithdraw = "টাকা উত্তোলন";
+  static const String withdrawHistory = "উত্তোলন হিস্ট্রি";
+  static const String teamInformation = "টিম ইনফরমেশন";
+  static const String logOut = "লগ আউট ";
 }
