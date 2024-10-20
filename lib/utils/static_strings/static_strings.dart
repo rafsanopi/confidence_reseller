@@ -91,6 +91,7 @@ class AppStrings {
   static const String sellAndProfit = "বিক্রি এবং মুনাফা";
   static const String balanceStatement = "ব্যালেন্স স্টেটমেন্ট";
   static const String resellerProRules = "রিসেলার প্রো নীতিমালা";
+  static const String editYourProfile = "আপনার প্রোফাইল ইডিট করুন";
 
   /// ====================== Side Drawer Design ==========================
   static const String notification = "নোটিফিকেশন";

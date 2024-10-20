@@ -6,6 +6,7 @@ import 'package:confidence_reseller/presentation/screens/auth/sign_in.dart';
 import 'package:confidence_reseller/presentation/screens/auth/sign_up.dart';
 import 'package:confidence_reseller/presentation/screens/home/home.dart';
 import 'package:confidence_reseller/presentation/screens/new_product/new_product.dart';
+import 'package:confidence_reseller/presentation/screens/profile/controller/edit_profile.dart';
 import 'package:confidence_reseller/presentation/screens/profile/profile.dart';
 import 'package:confidence_reseller/presentation/screens/profit/profit.dart';
 import 'package:confidence_reseller/presentation/screens/splash_screen/splash_screen.dart';
@@ -88,7 +89,14 @@ class AppRouter {
         GoRoute(
             name: RoutePath.profile,
             path: RoutePath.profile.addBasePath,
-            builder: (context, state) => const ProfileScreen()),
+            builder: (context, state) => ProfileScreen()),
+
+        ///======================= Edit Profile Route =======================
+
+        GoRoute(
+            name: RoutePath.editProfile,
+            path: RoutePath.editProfile.addBasePath,
+            builder: (context, state) => EditProfileScreen()),
       ]);
 
   static GoRouter get route => initRoute;

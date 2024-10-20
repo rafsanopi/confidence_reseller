@@ -46,6 +46,10 @@ class $AssetsIconsGen {
   /// File path: assets/icons/ecommerce.svg
   SvgGenImage get ecommerce => const SvgGenImage('assets/icons/ecommerce.svg');
 
+  /// File path: assets/icons/editProfile.svg
+  SvgGenImage get editProfile =>
+      const SvgGenImage('assets/icons/editProfile.svg');
+
   /// File path: assets/icons/faq.svg
   SvgGenImage get faq => const SvgGenImage('assets/icons/faq.svg');
 
@@ -66,6 +70,10 @@ class $AssetsIconsGen {
   AssetGenImage get galaryIcon =>
       const AssetGenImage('assets/icons/galary_icon.png');
 
+  /// File path: assets/icons/gallaryImg.png
+  AssetGenImage get gallaryImg =>
+      const AssetGenImage('assets/icons/gallaryImg.png');
+
   /// File path: assets/icons/homeSelected.svg
   SvgGenImage get homeSelected =>
       const SvgGenImage('assets/icons/homeSelected.svg');
@@ -77,9 +85,15 @@ class $AssetsIconsGen {
   /// File path: assets/icons/income.svg
   SvgGenImage get income => const SvgGenImage('assets/icons/income.svg');
 
+  /// File path: assets/icons/key.svg
+  SvgGenImage get key => const SvgGenImage('assets/icons/key.svg');
+
   /// File path: assets/icons/leaderShip.svg
   SvgGenImage get leaderShip =>
       const SvgGenImage('assets/icons/leaderShip.svg');
+
+  /// File path: assets/icons/location.svg
+  SvgGenImage get location => const SvgGenImage('assets/icons/location.svg');
 
   /// File path: assets/icons/logOut.svg
   SvgGenImage get logOut => const SvgGenImage('assets/icons/logOut.svg');
@@ -126,6 +140,9 @@ class $AssetsIconsGen {
   SvgGenImage get passiveIncome =>
       const SvgGenImage('assets/icons/passiveIncome.svg');
 
+  /// File path: assets/icons/phone.svg
+  SvgGenImage get phone => const SvgGenImage('assets/icons/phone.svg');
+
   /// File path: assets/icons/premium.png
   AssetGenImage get premium => const AssetGenImage('assets/icons/premium.png');
 
@@ -170,6 +187,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/sell.svg
   SvgGenImage get sell => const SvgGenImage('assets/icons/sell.svg');
+
+  /// File path: assets/icons/shop.svg
+  SvgGenImage get shop => const SvgGenImage('assets/icons/shop.svg');
 
   /// File path: assets/icons/stockOut.svg
   SvgGenImage get stockOut => const SvgGenImage('assets/icons/stockOut.svg');
@@ -221,16 +241,20 @@ class $AssetsIconsGen {
         copy,
         download,
         ecommerce,
+        editProfile,
         faq,
         favouUnselected,
         favourite,
         fb,
         free,
         galaryIcon,
+        gallaryImg,
         homeSelected,
         homeUnselected,
         income,
+        key,
         leaderShip,
+        location,
         logOut,
         logo,
         logoGreen,
@@ -243,6 +267,7 @@ class $AssetsIconsGen {
         notificationWhite,
         orderList,
         passiveIncome,
+        phone,
         premium,
         premiumLogo,
         productSearch,
@@ -255,6 +280,7 @@ class $AssetsIconsGen {
         resellerPro,
         resellingProduct,
         sell,
+        shop,
         stockOut,
         supportPng,
         supportSvg,
