@@ -34,7 +34,7 @@ class HomeScreen extends StatelessWidget {
           Assets.images.banner1.image(
               fit: BoxFit.fitWidth,
               width: double.maxFinite,
-              height: MediaQuery.of(context).size.height / 5),
+              height: MediaQuery.of(context).size.height / 4),
 
           /// ======================== Social Link Box =============================
 
@@ -69,6 +69,7 @@ class HomeScreen extends StatelessWidget {
           Container(
             margin: EdgeInsets.symmetric(horizontal: 20.r),
             padding: EdgeInsets.all(10.r),
+            height: MediaQuery.of(context).size.height / 8,
             decoration: const BoxDecoration(
                 gradient: AppColors.blueGradientColor,
                 borderRadius: BorderRadius.all(Radius.circular(8))),
@@ -78,6 +79,7 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     Assets.icons.notificationOrange.svg(),
                     CustomText(
+                      maxLines: 2,
                       fontSize: Dimensions.getFontSizeDefault(context),
                       left: 8.w,
                       text: AppStrings.noticeBoard,
@@ -85,14 +87,16 @@ class HomeScreen extends StatelessWidget {
                     )
                   ],
                 ),
-                CustomText(
-                  top: 8.h,
-                  textAlign: TextAlign.left,
-                  fontSize: Dimensions.getFontSizeSmall(context),
-                  maxLines: 10,
-                  left: 8.w,
-                  text: AppStrings.varifyProcess,
-                  color: AppColors.whiteColor,
+                Expanded(
+                  child: CustomText(
+                    top: 8.h,
+                    textAlign: TextAlign.left,
+                    fontSize: Dimensions.getFontSizeSmall(context),
+                    maxLines: 2,
+                    left: 8.w,
+                    text: AppStrings.varifyProcess,
+                    color: AppColors.whiteColor,
+                  ),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -127,7 +131,7 @@ class HomeScreen extends StatelessWidget {
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.all(10.r),
+                      padding: EdgeInsets.all(14.r),
                       decoration: BoxDecoration(
                           color: AppColors.whiteColor,
                           boxShadow: [
@@ -143,7 +147,7 @@ class HomeScreen extends StatelessWidget {
                       child: homeController.homeItems[index][AppStrings.icon],
                     ),
                     CustomText(
-                        top: 8.h,
+                        top: 10.h,
                         maxLines: 2,
                         fontSize: Dimensions.getFontSizeSmall(context),
                         text: homeController.homeItems[index][AppStrings.text])

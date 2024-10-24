@@ -173,6 +173,10 @@ class $AssetsIconsGen {
   AssetGenImage get resellerBlackLogo =>
       const AssetGenImage('assets/icons/resellerBlackLogo.jpg');
 
+  /// File path: assets/icons/resellerLogoNew.png
+  AssetGenImage get resellerLogoNew =>
+      const AssetGenImage('assets/icons/resellerLogoNew.png');
+
   /// File path: assets/icons/resellerProRuls.svg
   SvgGenImage get resellerProRuls =>
       const SvgGenImage('assets/icons/resellerProRuls.svg');
@@ -276,6 +280,7 @@ class $AssetsIconsGen {
         profitSelected,
         profitUnselected,
         resellerBlackLogo,
+        resellerLogoNew,
         resellerProRuls,
         resellerPro,
         resellingProduct,

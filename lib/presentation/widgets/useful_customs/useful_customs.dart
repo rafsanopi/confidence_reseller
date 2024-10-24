@@ -1,3 +1,4 @@
+import 'package:confidence_reseller/core/routes/route_path.dart';
 import 'package:confidence_reseller/global/custom_assets/assets.gen.dart';
 import 'package:confidence_reseller/presentation/widgets/custom_text/custom_text.dart';
 import 'package:confidence_reseller/utils/app_colors/app_colors.dart';
@@ -6,6 +7,7 @@ import 'package:confidence_reseller/utils/static_strings/static_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 
 /// ========================== This Custom Uses Gradient BackDround Color ==========================
 
@@ -95,7 +97,7 @@ showCongratesPopUp({required BuildContext context}) async {
                 onLoaded: (p0) {
                   Future.delayed(const Duration(seconds: 2), () {
                     // ignore: use_build_context_synchronously
-                    Navigator.of(context).pop();
+                    context.pushReplacementNamed(RoutePath.homeScreen);
                   });
                 },
               ),

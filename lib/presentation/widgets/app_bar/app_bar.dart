@@ -13,7 +13,7 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(top: 24.h),
-      padding: EdgeInsets.symmetric(vertical: 10.h, horizontal: 10.w),
+      padding: EdgeInsets.symmetric(vertical: 2.h, horizontal: 10.w),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -22,13 +22,14 @@ class CustomAppBar extends StatelessWidget {
               onPressed: () {
                 scaffoldKey.currentState?.openDrawer();
               },
-              icon: const Icon(
+              icon: Icon(
+                size: 34.r,
                 Icons.menu,
                 color: AppColors.primaryColor,
               )),
 
           /// =========================== Logo ========================
-          Assets.icons.logoGreen.image(),
+          Assets.icons.resellerLogoNew.image(height: 40.h, width: 140.w),
 
           /// ====================== Money Box =========================
           Row(
