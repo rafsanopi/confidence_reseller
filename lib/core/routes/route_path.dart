@@ -24,4 +24,6 @@ class RoutePath {
   //=================== Other screens ===================
 
   static const String editProfile = 'editProfile';
+  static const String productDetails = 'productDetails';
+
 }

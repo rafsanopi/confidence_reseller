@@ -94,6 +94,7 @@ class AppStrings {
   static const String editYourProfile = "আপনার প্রোফাইল ইডিট করুন";
 
   /// ====================== Side Drawer Design ==========================
+
   static const String notification = "নোটিফিকেশন";
   static const String productVideo = "প্রোডাক্ট ভিডিও";
   static const String favouritePro = "ফেভরিট প্রোডাক্ট";
@@ -105,4 +106,24 @@ class AppStrings {
   static const String withdrawHistory = "উত্তোলন হিস্ট্রি";
   static const String teamInformation = "টিম ইনফরমেশন";
   static const String logOut = "লগ আউট ";
+
+  /// ======================== Product Details ============================
+  static const String productDetails = "প্রোডাক্ট এর বিস্তারিত";
+  static const String productName = "প্রোডাক্টের নাম";
+  static const String varified = "ভেরিফাইড";
+  static const String productPrice = "প্রোডাক্টের মূল্যঃ";
+  static const String inStock = "স্টক: আছে";
+  static const String suggestedPrice = "সাজেস্টেড বিক্রয় মূল্যঃ";
+  static const String downloadVideo = "Download Video";
+  static const String prodectQuentity = "*পণ্যের পরিমান";
+  static const String productSize = "*পণ্যের সাইজ";
+  static const String productColor = "*পণ্যের রং";
+  static const String sellingPrice = "*বিক্রয় মূল্য লিখুন";
+  static const String advancePayment = "এডভান্স পেমেন্ট";
+  static const String totalProfit = "টোটাল প্রফিট";
+  static const String order = "অর্ডার করুন";
+  static const String addmore = "আরও যোগ করুন";
+  static const String suggestedProduct = "সাজেস্টেড প্রোডাক্ট";
+  // static const String varified = "ভেরিফাইড";
+  // static const String varified = "ভেরিফাইড";
 }

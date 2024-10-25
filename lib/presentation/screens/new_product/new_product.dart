@@ -1,8 +1,8 @@
+import 'package:confidence_reseller/core/routes/route_path.dart';
 import 'package:confidence_reseller/global/custom_assets/assets.gen.dart';
 import 'package:confidence_reseller/helper/extention/extention.dart';
 import 'package:confidence_reseller/presentation/screens/new_product/controller/new_pro_controller.dart';
 import 'package:confidence_reseller/presentation/widgets/app_bar/app_bar.dart';
-
 import 'package:confidence_reseller/presentation/widgets/custom_text/custom_text.dart';
 import 'package:confidence_reseller/presentation/widgets/nav_bar/nav_bar.dart';
 import 'package:confidence_reseller/presentation/widgets/side_drawer/side_drawer.dart';
@@ -14,6 +14,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 
 class NewProductScreen extends StatelessWidget {
   NewProductScreen({super.key});
@@ -183,6 +184,8 @@ class NewProductScreen extends StatelessWidget {
                               ],
                             ),
 
+                            //// =============================== Image Section ============================
+
                             SingleChildScrollView(
                               padding: EdgeInsets.symmetric(vertical: 24.h),
                               scrollDirection: Axis.horizontal,
@@ -190,30 +193,36 @@ class NewProductScreen extends StatelessWidget {
                                 children: List.generate(
                                   5,
                                   (index) {
-                                    return Padding(
-                                        padding:
-                                            const EdgeInsets.only(right: 10),
-                                        child: Stack(
-                                          children: [
-                                            Assets.images.product1.image(),
+                                    return GestureDetector(
+                                      onTap: () {
+                                        context.pushNamed(
+                                            RoutePath.productDetails);
+                                      },
+                                      child: Padding(
+                                          padding:
+                                              const EdgeInsets.only(right: 10),
+                                          child: Stack(
+                                            children: [
+                                              Assets.images.product1.image(),
 
-                                            /// ======================= Download Button ===================
-                                            Positioned(
-                                                left: 10,
-                                                top: 10,
-                                                child: Assets.icons.download
-                                                    .image()),
+                                              /// ======================= Download Button ===================
+                                              Positioned(
+                                                  left: 10,
+                                                  top: 10,
+                                                  child: Assets.icons.download
+                                                      .image()),
 
-                                            /// ======================= Favourite Button ===================
+                                              /// ======================= Favourite Button ===================
 
-                                            Positioned(
-                                                right: 10,
-                                                top: 10,
-                                                child: Assets
-                                                    .icons.favouUnselected
-                                                    .image()),
-                                          ],
-                                        ));
+                                              Positioned(
+                                                  right: 10,
+                                                  top: 10,
+                                                  child: Assets
+                                                      .icons.favouUnselected
+                                                      .image()),
+                                            ],
+                                          )),
+                                    );
                                   },
                                 ),
                               ),

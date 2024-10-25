@@ -6,6 +6,7 @@ import 'package:confidence_reseller/presentation/screens/auth/sign_in.dart';
 import 'package:confidence_reseller/presentation/screens/auth/sign_up.dart';
 import 'package:confidence_reseller/presentation/screens/home/home.dart';
 import 'package:confidence_reseller/presentation/screens/new_product/new_product.dart';
+import 'package:confidence_reseller/presentation/screens/pro_details/pro_details.dart';
 import 'package:confidence_reseller/presentation/screens/profile/controller/edit_profile.dart';
 import 'package:confidence_reseller/presentation/screens/profile/profile.dart';
 import 'package:confidence_reseller/presentation/screens/profit/profit.dart';
@@ -97,6 +98,13 @@ class AppRouter {
             name: RoutePath.editProfile,
             path: RoutePath.editProfile.addBasePath,
             builder: (context, state) => EditProfileScreen()),
+
+        ///======================= Product Details =======================
+
+        GoRoute(
+            name: RoutePath.productDetails,
+            path: RoutePath.productDetails.addBasePath,
+            builder: (context, state) => ProductDetails()),
       ]);
 
   static GoRouter get route => initRoute;

@@ -14,33 +14,38 @@ class CustomAppBar extends StatelessWidget {
     return Container(
       margin: EdgeInsets.only(top: 24.h),
       padding: EdgeInsets.symmetric(vertical: 2.h, horizontal: 10.w),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      child: Column(
         children: [
-          /// ==================== Menu Button ======================
-          IconButton(
-              onPressed: () {
-                scaffoldKey.currentState?.openDrawer();
-              },
-              icon: Icon(
-                size: 34.r,
-                Icons.menu,
-                color: AppColors.primaryColor,
-              )),
-
-          /// =========================== Logo ========================
-          Assets.icons.resellerLogoNew.image(height: 40.h, width: 140.w),
-
-          /// ====================== Money Box =========================
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const CustomText(
-                text: "00,00",
-                right: 5,
+              /// ==================== Menu Button ======================
+              IconButton(
+                  onPressed: () {
+                    scaffoldKey.currentState?.openDrawer();
+                  },
+                  icon: Icon(
+                    size: 34.r,
+                    Icons.menu,
+                    color: AppColors.primaryColor,
+                  )),
+
+              /// =========================== Logo ========================
+              Assets.icons.resellerLogoNew.image(height: 40.h, width: 140.w),
+
+              /// ====================== Money Box =========================
+              Row(
+                children: [
+                  const CustomText(
+                    text: "00,00",
+                    right: 5,
+                  ),
+                  Assets.icons.moneyBox.image()
+                ],
               ),
-              Assets.icons.moneyBox.image()
             ],
-          )
+          ),
+          const Divider()
         ],
       ),
     );
