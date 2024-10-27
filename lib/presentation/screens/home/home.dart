@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
 
           /// =========================== Banner =======================
           Assets.images.banner1.image(
-              fit: BoxFit.fitWidth,
+              fit: BoxFit.cover,
               width: double.maxFinite,
               height: MediaQuery.of(context).size.height / 4),
 
@@ -120,8 +120,8 @@ class HomeScreen extends StatelessWidget {
             itemCount: homeController.homeItems.length,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 childAspectRatio: 0.6.r,
-                crossAxisSpacing: 20,
-                mainAxisSpacing: 20,
+                crossAxisSpacing: 12,
+                mainAxisSpacing: 24,
                 crossAxisCount: 5),
             itemBuilder: (context, index) {
               return GestureDetector(

@@ -36,6 +36,10 @@ class $AssetsIconsGen {
   AssetGenImage get clockRed =>
       const AssetGenImage('assets/icons/clockRed.png');
 
+  /// File path: assets/icons/comissionIncome.svg
+  SvgGenImage get comissionIncome =>
+      const SvgGenImage('assets/icons/comissionIncome.svg');
+
   /// File path: assets/icons/copy.svg
   SvgGenImage get copy => const SvgGenImage('assets/icons/copy.svg');
 
@@ -125,6 +129,10 @@ class $AssetsIconsGen {
   SvgGenImage get newProUnselected =>
       const SvgGenImage('assets/icons/newProUnselected.svg');
 
+  /// File path: assets/icons/notification.svg
+  SvgGenImage get notification =>
+      const SvgGenImage('assets/icons/notification.svg');
+
   /// File path: assets/icons/notificationOrange.svg
   SvgGenImage get notificationOrange =>
       const SvgGenImage('assets/icons/notificationOrange.svg');
@@ -133,8 +141,16 @@ class $AssetsIconsGen {
   SvgGenImage get notificationWhite =>
       const SvgGenImage('assets/icons/notificationWhite.svg');
 
+  /// File path: assets/icons/orderDelivery.svg
+  SvgGenImage get orderDelivery =>
+      const SvgGenImage('assets/icons/orderDelivery.svg');
+
   /// File path: assets/icons/orderList.svg
   SvgGenImage get orderList => const SvgGenImage('assets/icons/orderList.svg');
+
+  /// File path: assets/icons/orderShipping.svg
+  SvgGenImage get orderShipping =>
+      const SvgGenImage('assets/icons/orderShipping.svg');
 
   /// File path: assets/icons/passiveIncome.svg
   SvgGenImage get passiveIncome =>
@@ -242,6 +258,7 @@ class $AssetsIconsGen {
         cartList,
         clock,
         clockRed,
+        comissionIncome,
         copy,
         download,
         ecommerce,
@@ -267,9 +284,12 @@ class $AssetsIconsGen {
         moneyWithdrow,
         newProSelected,
         newProUnselected,
+        notification,
         notificationOrange,
         notificationWhite,
+        orderDelivery,
         orderList,
+        orderShipping,
         passiveIncome,
         phone,
         premium,

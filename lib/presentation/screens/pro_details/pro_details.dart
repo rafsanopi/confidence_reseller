@@ -1,5 +1,6 @@
 import 'package:confidence_reseller/global/custom_assets/assets.gen.dart';
 import 'package:confidence_reseller/helper/extention/extention.dart';
+import 'package:confidence_reseller/presentation/screens/pro_details/inner/pro_details_more.dart';
 import 'package:confidence_reseller/presentation/widgets/app_bar/app_bar.dart';
 import 'package:confidence_reseller/presentation/widgets/custom_text/custom_text.dart';
 import 'package:confidence_reseller/utils/app_colors/app_colors.dart';
@@ -332,11 +333,24 @@ class ProductDetails extends StatelessWidget {
                       ),
                     ],
                   ),
+                  20.heightWidth,
 
+                  /// ======================= Product Pricing ===========================
+                  productPricing(context: context),
+                  20.heightWidth,
+
+                  /// ======================= Product Payment Pricing ===========================
+
+                  paymentPrice(context: context),
+                  20.heightWidth,
+
+                  /// ======================= Suggested Product ===========================
+
+                  suggestedProduct(context: context),
                   44.heightWidth
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),

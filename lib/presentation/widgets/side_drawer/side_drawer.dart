@@ -1,3 +1,4 @@
+import 'package:confidence_reseller/core/routes/route_path.dart';
 import 'package:confidence_reseller/global/custom_assets/assets.gen.dart';
 import 'package:confidence_reseller/helper/extention/extention.dart';
 import 'package:confidence_reseller/presentation/widgets/custom_text/custom_text.dart';
@@ -5,6 +6,7 @@ import 'package:confidence_reseller/utils/app_colors/app_colors.dart';
 import 'package:confidence_reseller/utils/static_strings/static_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 
 class CustomSideDrawer extends StatelessWidget {
   const CustomSideDrawer({super.key});
@@ -56,7 +58,9 @@ class CustomSideDrawer extends StatelessWidget {
             /// ============================ Notification ===========================
 
             sideCardDesign(
-              onTap: () {},
+              onTap: () {
+                context.pushNamed(RoutePath.notifications);
+              },
               title: AppStrings.notification,
               icon: Assets.icons.notificationWhite.svg(),
             ),

@@ -108,6 +108,7 @@ class AppStrings {
   static const String logOut = "লগ আউট ";
 
   /// ======================== Product Details ============================
+
   static const String productDetails = "প্রোডাক্ট এর বিস্তারিত";
   static const String productName = "প্রোডাক্টের নাম";
   static const String varified = "ভেরিফাইড";
@@ -115,7 +116,7 @@ class AppStrings {
   static const String inStock = "স্টক: আছে";
   static const String suggestedPrice = "সাজেস্টেড বিক্রয় মূল্যঃ";
   static const String downloadVideo = "Download Video";
-  static const String prodectQuentity = "*পণ্যের পরিমান";
+  static const String productQuentity = "*পণ্যের পরিমান";
   static const String productSize = "*পণ্যের সাইজ";
   static const String productColor = "*পণ্যের রং";
   static const String sellingPrice = "*বিক্রয় মূল্য লিখুন";
@@ -124,6 +125,13 @@ class AppStrings {
   static const String order = "অর্ডার করুন";
   static const String addmore = "আরও যোগ করুন";
   static const String suggestedProduct = "সাজেস্টেড প্রোডাক্ট";
-  // static const String varified = "ভেরিফাইড";
+
+  /// ======================== Notification ============================
+
+  static const String shippingOrder = "শিপিং অর্ডার";
+  static const String orderDelivery = "অর্ডার ডেলিভারি";
+  static const String comissionIncome = "কমিশন ইনকাম";
+  static const String newNotice = "নতুন নোটিশ";
+
   // static const String varified = "ভেরিফাইড";
 }

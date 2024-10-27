@@ -21,9 +21,11 @@ class RoutePath {
   static const String profit = 'profit';
   static const String profile = 'profile';
 
+  //=================== Side Drawer screens ===================
+  static const String notifications = 'notifications';
+
   //=================== Other screens ===================
 
   static const String editProfile = 'editProfile';
   static const String productDetails = 'productDetails';
-
 }
