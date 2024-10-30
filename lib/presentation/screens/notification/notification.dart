@@ -29,28 +29,24 @@ class NotificationScreen extends StatelessWidget {
 
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 20.w),
-              child: Column(
-                children: [
-                  Container(
-                    width: double.maxFinite,
-                    decoration: BoxDecoration(
-                      border: Border.all(),
-                    ),
-                    padding: EdgeInsets.all(10.r),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Assets.icons.notification
-                            // ignore: deprecated_member_use_from_same_package
-                            .svg(color: AppColors.blackColor),
-                        const CustomText(
-                          text: AppStrings.notification,
-                          left: 10,
-                        )
-                      ],
-                    ),
-                  )
-                ],
+              child: Container(
+                width: double.maxFinite,
+                decoration: BoxDecoration(
+                  border: Border.all(),
+                ),
+                padding: EdgeInsets.all(10.r),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Assets.icons.notification
+                        // ignore: deprecated_member_use_from_same_package
+                        .svg(color: AppColors.blackColor),
+                    const CustomText(
+                      text: AppStrings.notification,
+                      left: 10,
+                    )
+                  ],
+                ),
               ),
             ),
 

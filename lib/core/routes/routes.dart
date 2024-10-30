@@ -4,14 +4,17 @@ import 'package:confidence_reseller/presentation/screens/auth/choose_account_typ
 import 'package:confidence_reseller/presentation/screens/auth/otp_varification.dart';
 import 'package:confidence_reseller/presentation/screens/auth/sign_in.dart';
 import 'package:confidence_reseller/presentation/screens/auth/sign_up.dart';
+import 'package:confidence_reseller/presentation/screens/favourite_pro/favourite_pro.dart';
 import 'package:confidence_reseller/presentation/screens/home/home.dart';
 import 'package:confidence_reseller/presentation/screens/new_product/new_product.dart';
 import 'package:confidence_reseller/presentation/screens/notification/notification.dart';
 import 'package:confidence_reseller/presentation/screens/pro_details/pro_details.dart';
+import 'package:confidence_reseller/presentation/screens/product_video/product_video.dart';
 import 'package:confidence_reseller/presentation/screens/profile/controller/edit_profile.dart';
 import 'package:confidence_reseller/presentation/screens/profile/profile.dart';
 import 'package:confidence_reseller/presentation/screens/profit/profit.dart';
 import 'package:confidence_reseller/presentation/screens/splash_screen/splash_screen.dart';
+import 'package:confidence_reseller/presentation/screens/stock_out_pro/stock_out_pro.dart';
 import 'package:confidence_reseller/presentation/widgets/error_screen/error_screen.dart';
 import 'package:go_router/go_router.dart';
 
@@ -113,6 +116,24 @@ class AppRouter {
             name: RoutePath.notifications,
             path: RoutePath.notifications.addBasePath,
             builder: (context, state) => NotificationScreen()),
+
+        ///======================= Product Video =======================
+        GoRoute(
+            name: RoutePath.productVideo,
+            path: RoutePath.productVideo.addBasePath,
+            builder: (context, state) => ProductVideoScreen()),
+
+        ///======================= Favourite Product  =======================
+        GoRoute(
+            name: RoutePath.favouritePro,
+            path: RoutePath.favouritePro.addBasePath,
+            builder: (context, state) => FavouritePro()),
+
+        ///======================= StockOut Product  =======================
+        GoRoute(
+            name: RoutePath.stockOutPro,
+            path: RoutePath.stockOutPro.addBasePath,
+            builder: (context, state) => StockOutPro()),
       ]);
 
   static GoRouter get route => initRoute;

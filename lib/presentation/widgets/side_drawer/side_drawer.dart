@@ -68,7 +68,9 @@ class CustomSideDrawer extends StatelessWidget {
             /// ============================ Product Video ===========================
 
             sideCardDesign(
-              onTap: () {},
+              onTap: () {
+                context.pushNamed(RoutePath.productVideo);
+              },
               title: AppStrings.productVideo,
               icon: Assets.icons.productVideo.svg(),
             ),
@@ -76,7 +78,9 @@ class CustomSideDrawer extends StatelessWidget {
             /// ============================ Favourite Product ===========================
 
             sideCardDesign(
-              onTap: () {},
+              onTap: () {
+                context.pushNamed(RoutePath.favouritePro);
+              },
               title: AppStrings.favouritePro,
               icon: Assets.icons.favourite.svg(),
             ),
@@ -84,7 +88,9 @@ class CustomSideDrawer extends StatelessWidget {
             /// ============================ Stock Out ===========================
 
             sideCardDesign(
-              onTap: () {},
+              onTap: () {
+                context.pushNamed(RoutePath.stockOutPro);
+              },
               title: AppStrings.stockOutPro,
               icon: Assets.icons.stockOut.svg(),
             ),

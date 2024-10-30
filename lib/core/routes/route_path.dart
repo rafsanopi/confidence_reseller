@@ -23,6 +23,9 @@ class RoutePath {
 
   //=================== Side Drawer screens ===================
   static const String notifications = 'notifications';
+  static const String productVideo = 'productVideo';
+  static const String favouritePro = 'favouritePro';
+  static const String stockOutPro = 'stockOutPro';
 
   //=================== Other screens ===================
 

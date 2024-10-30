@@ -337,8 +337,13 @@ class $AssetsImagesGen {
   /// File path: assets/images/profit.png
   AssetGenImage get profit => const AssetGenImage('assets/images/profit.png');
 
+  /// File path: assets/images/videoButton.png
+  AssetGenImage get videoButton =>
+      const AssetGenImage('assets/images/videoButton.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [banner1, product1, product2, profit];
+  List<AssetGenImage> get values =>
+      [banner1, product1, product2, profit, videoButton];
 }
 
 class $AssetsLotteGen {
