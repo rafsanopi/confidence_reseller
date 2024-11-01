@@ -133,5 +133,17 @@ class AppStrings {
   static const String comissionIncome = "কমিশন ইনকাম";
   static const String newNotice = "নতুন নোটিশ";
 
+  /// ======================== My Order List ============================
+  static const String customerNamePhoneOrderId =
+      "Customer name/ Phone/ Order ID";
+
+  static const String all = "সব";
+  static const String pending = "পেন্ডিং";
+  static const String processing = "প্রসেসিং";
+  static const String shipping = "শিপিং";
+  static const String complete = "কমপ্লিট";
+  static const String returnn = "রিটার্ন";
+  static const String rejected = "বাতিল";
+
   // static const String varified = "ভেরিফাইড";
 }

@@ -26,6 +26,9 @@ class RoutePath {
   static const String productVideo = 'productVideo';
   static const String favouritePro = 'favouritePro';
   static const String stockOutPro = 'stockOutPro';
+  static const String orderList = 'orderList';
+  static const String cartList = 'cartList';
+  static const String addWallet = 'addWallet';
 
   //=================== Other screens ===================
 

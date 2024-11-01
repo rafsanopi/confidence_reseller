@@ -98,7 +98,9 @@ class CustomSideDrawer extends StatelessWidget {
             /// ============================ Order List ===========================
 
             sideCardDesign(
-              onTap: () {},
+              onTap: () {
+                context.pushNamed(RoutePath.orderList);
+              },
               title: AppStrings.orderList,
               icon: Assets.icons.orderList.svg(),
             ),

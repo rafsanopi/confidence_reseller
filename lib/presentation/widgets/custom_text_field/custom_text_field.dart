@@ -33,6 +33,8 @@ class CustomTextField extends StatefulWidget {
     this.focusedBorder,
     this.enabledBorder,
     this.fillColor,
+    this.horizontal = 0,
+    this.vertical = 0,
   });
 
   final TextEditingController? textEditingController;
@@ -64,6 +66,9 @@ class CustomTextField extends StatefulWidget {
   final bool isPassword;
 
   final bool readOnly;
+  final double horizontal;
+  final double vertical;
+
   final int? maxLength;
   final bool? isCollapsed;
   final bool? isDense;
@@ -79,49 +84,53 @@ class _CustomTextFieldState extends State<CustomTextField> {
 
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
-      onTap: widget.onTap,
-      autovalidateMode: AutovalidateMode.onUserInteraction,
-      inputFormatters: widget.inputFormatters,
-      onFieldSubmitted: widget.onFieldSubmitted,
-      readOnly: widget.readOnly,
-      controller: widget.textEditingController,
-      focusNode: widget.focusNode,
-      maxLength: widget.maxLength,
-      keyboardType: widget.keyboardType,
-      textInputAction: widget.textInputAction,
-      cursorColor: widget.cursorColor,
-      style: widget.inputTextStyle,
-      onChanged: widget.onChanged,
-      maxLines: widget.maxLines,
-      obscureText: widget.isPassword ? obscureText : false,
-      validator: widget.validator,
-      decoration: InputDecoration(
-          contentPadding: const EdgeInsets.all(10),
-          fillColor: widget.fillColor,
-          isCollapsed: widget.isCollapsed,
-          isDense: widget.isDense,
-          errorMaxLines: 2,
-          hintText: widget.hintText,
-          hintStyle: widget.hintStyle,
-          filled: true,
-          prefixIcon: widget.prefixIcon,
-          suffixIcon: widget.isPassword
-              ? GestureDetector(
-                  onTap: toggle,
-                  child: Padding(
-                    padding: const EdgeInsets.only(
-                        left: 16, right: 16, top: 16, bottom: 16),
-                    child: obscureText
-                        ? const Icon(Icons.visibility_off_outlined)
-                        : const Icon(Icons.visibility_outlined),
-                  ),
-                )
-              : widget.suffixIcon,
-          suffixIconColor: widget.suffixIconColor,
-          border: widget.border,
-          focusedBorder: widget.focusedBorder,
-          enabledBorder: widget.enabledBorder),
+    return Padding(
+      padding: EdgeInsets.symmetric(
+          horizontal: widget.horizontal, vertical: widget.vertical),
+      child: TextFormField(
+        onTap: widget.onTap,
+        autovalidateMode: AutovalidateMode.onUserInteraction,
+        inputFormatters: widget.inputFormatters,
+        onFieldSubmitted: widget.onFieldSubmitted,
+        readOnly: widget.readOnly,
+        controller: widget.textEditingController,
+        focusNode: widget.focusNode,
+        maxLength: widget.maxLength,
+        keyboardType: widget.keyboardType,
+        textInputAction: widget.textInputAction,
+        cursorColor: widget.cursorColor,
+        style: widget.inputTextStyle,
+        onChanged: widget.onChanged,
+        maxLines: widget.maxLines,
+        obscureText: widget.isPassword ? obscureText : false,
+        validator: widget.validator,
+        decoration: InputDecoration(
+            contentPadding: const EdgeInsets.all(10),
+            fillColor: widget.fillColor,
+            isCollapsed: widget.isCollapsed,
+            isDense: widget.isDense,
+            errorMaxLines: 2,
+            hintText: widget.hintText,
+            hintStyle: widget.hintStyle,
+            filled: true,
+            prefixIcon: widget.prefixIcon,
+            suffixIcon: widget.isPassword
+                ? GestureDetector(
+                    onTap: toggle,
+                    child: Padding(
+                      padding: const EdgeInsets.only(
+                          left: 16, right: 16, top: 16, bottom: 16),
+                      child: obscureText
+                          ? const Icon(Icons.visibility_off_outlined)
+                          : const Icon(Icons.visibility_outlined),
+                    ),
+                  )
+                : widget.suffixIcon,
+            suffixIconColor: widget.suffixIconColor,
+            border: widget.border,
+            focusedBorder: widget.focusedBorder,
+            enabledBorder: widget.enabledBorder),
+      ),
     );
   }
 

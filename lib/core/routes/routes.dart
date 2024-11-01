@@ -1,13 +1,16 @@
 import 'package:confidence_reseller/core/routes/route_path.dart';
 import 'package:confidence_reseller/helper/extention/extention.dart';
+import 'package:confidence_reseller/presentation/screens/add_wallet/add_wallet.dart';
 import 'package:confidence_reseller/presentation/screens/auth/choose_account_type.dart';
 import 'package:confidence_reseller/presentation/screens/auth/otp_varification.dart';
 import 'package:confidence_reseller/presentation/screens/auth/sign_in.dart';
 import 'package:confidence_reseller/presentation/screens/auth/sign_up.dart';
+import 'package:confidence_reseller/presentation/screens/cart_list/cart_list.dart';
 import 'package:confidence_reseller/presentation/screens/favourite_pro/favourite_pro.dart';
 import 'package:confidence_reseller/presentation/screens/home/home.dart';
 import 'package:confidence_reseller/presentation/screens/new_product/new_product.dart';
 import 'package:confidence_reseller/presentation/screens/notification/notification.dart';
+import 'package:confidence_reseller/presentation/screens/order_list/order_list.dart';
 import 'package:confidence_reseller/presentation/screens/pro_details/pro_details.dart';
 import 'package:confidence_reseller/presentation/screens/product_video/product_video.dart';
 import 'package:confidence_reseller/presentation/screens/profile/controller/edit_profile.dart';
@@ -129,11 +132,30 @@ class AppRouter {
             path: RoutePath.favouritePro.addBasePath,
             builder: (context, state) => FavouritePro()),
 
-        ///======================= StockOut Product  =======================
+        ///======================= StockOut Product =======================
         GoRoute(
             name: RoutePath.stockOutPro,
             path: RoutePath.stockOutPro.addBasePath,
             builder: (context, state) => StockOutPro()),
+
+        ///======================= OrderList Product =======================
+        GoRoute(
+            name: RoutePath.orderList,
+            path: RoutePath.orderList.addBasePath,
+            builder: (context, state) => OrderList()),
+
+        ///======================= Cart List Product =======================
+        GoRoute(
+            name: RoutePath.cartList,
+            path: RoutePath.cartList.addBasePath,
+            builder: (context, state) => CartList()),
+
+        ///======================= Add Wallet =======================
+
+        GoRoute(
+            name: RoutePath.addWallet,
+            path: RoutePath.addWallet.addBasePath,
+            builder: (context, state) => AddWallet()),
       ]);
 
   static GoRouter get route => initRoute;

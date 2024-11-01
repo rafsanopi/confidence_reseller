@@ -26,6 +26,9 @@ class $AssetsIconsGen {
   AssetGenImage get bannerImg =>
       const AssetGenImage('assets/icons/bannerImg.png');
 
+  /// File path: assets/icons/calender.svg
+  SvgGenImage get calender => const SvgGenImage('assets/icons/calender.svg');
+
   /// File path: assets/icons/cartList.svg
   SvgGenImage get cartList => const SvgGenImage('assets/icons/cartList.svg');
 
@@ -42,6 +45,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/copy.svg
   SvgGenImage get copy => const SvgGenImage('assets/icons/copy.svg');
+
+  /// File path: assets/icons/details.svg
+  SvgGenImage get details => const SvgGenImage('assets/icons/details.svg');
 
   /// File path: assets/icons/download.png
   AssetGenImage get download =>
@@ -255,11 +261,13 @@ class $AssetsIconsGen {
         addWallet,
         balance,
         bannerImg,
+        calender,
         cartList,
         clock,
         clockRed,
         comissionIncome,
         copy,
+        details,
         download,
         ecommerce,
         editProfile,
