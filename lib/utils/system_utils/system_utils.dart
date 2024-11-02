@@ -18,7 +18,8 @@ class SystemUtil {
   static void setStatusBarColor({required Color color}) {
     try {
       SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-          statusBarBrightness: Brightness.light,
+          statusBarBrightness: Brightness.dark,
+          statusBarIconBrightness: Brightness.dark,
           statusBarColor: color)); //to change status bar color
     } catch (e) {
       debugPrint("Error From SystemUtil == setStatusBarColor>>>>>>>>>>>>>> $e");

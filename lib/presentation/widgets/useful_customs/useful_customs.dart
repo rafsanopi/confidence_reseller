@@ -124,3 +124,28 @@ showCongratesPopUp({required BuildContext context}) async {
     },
   );
 }
+
+Widget title({required Widget icon, required String title}) => Padding(
+      padding: EdgeInsets.symmetric(horizontal: 20.w),
+      child: Column(
+        children: [
+          Container(
+            width: double.maxFinite,
+            decoration: BoxDecoration(
+              border: Border.all(),
+            ),
+            padding: EdgeInsets.all(10.r),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                icon,
+                CustomText(
+                  text: title,
+                  left: 10,
+                )
+              ],
+            ),
+          ),
+        ],
+      ),
+    );

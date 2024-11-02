@@ -1,6 +1,5 @@
 import 'package:confidence_reseller/utils/app_colors/app_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 TextStyle style = const TextStyle(color: AppColors.blackColor);
@@ -90,14 +89,14 @@ const AppBarTheme appBarTheme = AppBarTheme(
   scrolledUnderElevation: 0,
   //titleTextStyle: interMedium.copyWith(fontSize: 16.sp, color: black),
   actionsIconTheme: IconThemeData(color: AppColors.blackColor),
-  systemOverlayStyle: SystemUiOverlayStyle(
-    // Status bar color
+  // systemOverlayStyle: SystemUiOverlayStyle(
+  //   // Status bar color
 
-    statusBarColor: AppColors.whiteColor,
-    // Status bar brightness (optional)
-    statusBarIconBrightness: Brightness.light, // For Android (dark icons)
-    statusBarBrightness: Brightness.light, // For iOS (dark icons)
-  ),
+  //   statusBarColor: AppColors.whiteColor,
+  //   // Status bar brightness (optional)
+  //   statusBarIconBrightness: Brightness.light, // For Android (dark icons)
+  //   statusBarBrightness: Brightness.light, // For iOS (dark icons)
+  // ),
 );
 
 ///========================= Bottom NavigationBar ==============================

@@ -145,5 +145,12 @@ class AppStrings {
   static const String returnn = "রিটার্ন";
   static const String rejected = "বাতিল";
 
+  /// ======================== Cart List ============================
+  static const String remove = "Remove";
+  static const String orderNow = "অর্ডার করুন";
+  static const String addMore = "আরও যোগ করুন";
+
+  static const String productTotalPrice = "প্রোডাক্টের সর্বমোট মূল্যঃ";
+
   // static const String varified = "ভেরিফাইড";
 }

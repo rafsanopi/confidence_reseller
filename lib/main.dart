@@ -9,7 +9,7 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get/get_navigation/src/routes/transitions_type.dart';
 
 void main() {
-  SystemUtil.setStatusBarColor(color: Colors.transparent);
+  SystemUtil.setStatusBarColor(color: Colors.white);
   initGetx();
   initDependencies();
   runApp(const MyApp());
