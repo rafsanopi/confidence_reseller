@@ -115,11 +115,21 @@ class CustomSideDrawer extends StatelessWidget {
               icon: Assets.icons.cartList.svg(),
             ),
 
-            /// ============================ Money Withdrow ===========================
+            /// ============================ Add Wallet ===========================
 
             sideCardDesign(
               onTap: () {
                 context.pushNamed(RoutePath.addWallet);
+              },
+              title: AppStrings.addWallet,
+              icon: Assets.icons.addWallet.svg(),
+            ),
+
+            /// ============================ Money Withdrow ===========================
+
+            sideCardDesign(
+              onTap: () {
+                context.pushNamed(RoutePath.moneyWithdraw);
               },
               title: AppStrings.moneyWithdraw,
               icon: Assets.icons.moneyWithdrow.svg(),

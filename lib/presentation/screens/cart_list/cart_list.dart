@@ -28,8 +28,12 @@ class CartList extends StatelessWidget {
               scaffoldKey: scaffoldKey,
             ),
 
+            //// ============================ Header Title ===============================
+
             title(
-                icon: Assets.icons.cartList.svg(), title: AppStrings.cartList),
+                // ignore: deprecated_member_use_from_same_package
+                icon: Assets.icons.cartList.svg(color: AppColors.blackColor),
+                title: AppStrings.cartList),
 
             /// ========================== Product List ===========================
 

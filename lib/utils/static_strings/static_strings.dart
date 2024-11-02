@@ -149,8 +149,16 @@ class AppStrings {
   static const String remove = "Remove";
   static const String orderNow = "অর্ডার করুন";
   static const String addMore = "আরও যোগ করুন";
-
   static const String productTotalPrice = "প্রোডাক্টের সর্বমোট মূল্যঃ";
+
+  /// ======================== Cart List ============================
+  static const String accountType = "একাউন্ট এর ধরণ ";
+  static const String accountNumber = "একাউন্ট নং";
+  static const String saveIt = "সেভ করুন";
+  static const String accountList = "একাউন্ট লিস্ট";
+  static const String toRemoveAccount =
+      "অ্যাকাউন্ট রিমুভ করতে সাপোর্ট সেন্টার এ যোগাযোগ করুন।";
+  static const String nagad = "Nagad";
 
   // static const String varified = "ভেরিফাইড";
 }

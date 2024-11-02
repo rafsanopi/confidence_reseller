@@ -28,6 +28,7 @@ class RoutePath {
   static const String stockOutPro = 'stockOutPro';
   static const String orderList = 'orderList';
   static const String cartList = 'cartList';
+  static const String moneyWithdraw = 'moneyWithdraw';
   static const String addWallet = 'addWallet';
 
   //=================== Other screens ===================
