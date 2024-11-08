@@ -30,6 +30,7 @@ class RoutePath {
   static const String cartList = 'cartList';
   static const String moneyWithdraw = 'moneyWithdraw';
   static const String addWallet = 'addWallet';
+  static const String withdrawHistory = 'withdrawHistory';
 
   //=================== Other screens ===================
 

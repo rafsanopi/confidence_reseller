@@ -8,6 +8,7 @@ import 'package:confidence_reseller/presentation/screens/auth/sign_up.dart';
 import 'package:confidence_reseller/presentation/screens/cart_list/cart_list.dart';
 import 'package:confidence_reseller/presentation/screens/favourite_pro/favourite_pro.dart';
 import 'package:confidence_reseller/presentation/screens/home/home.dart';
+import 'package:confidence_reseller/presentation/screens/money_withdraw/money_withdraw.dart';
 import 'package:confidence_reseller/presentation/screens/new_product/new_product.dart';
 import 'package:confidence_reseller/presentation/screens/notification/notification.dart';
 import 'package:confidence_reseller/presentation/screens/order_list/order_list.dart';
@@ -18,6 +19,7 @@ import 'package:confidence_reseller/presentation/screens/profile/profile.dart';
 import 'package:confidence_reseller/presentation/screens/profit/profit.dart';
 import 'package:confidence_reseller/presentation/screens/splash_screen/splash_screen.dart';
 import 'package:confidence_reseller/presentation/screens/stock_out_pro/stock_out_pro.dart';
+import 'package:confidence_reseller/presentation/screens/withdraw_history/withdraw_history.dart';
 import 'package:confidence_reseller/presentation/widgets/error_screen/error_screen.dart';
 import 'package:go_router/go_router.dart';
 
@@ -156,6 +158,20 @@ class AppRouter {
             name: RoutePath.addWallet,
             path: RoutePath.addWallet.addBasePath,
             builder: (context, state) => AddWallet()),
+
+        ///======================= Money WithDraw =======================
+
+        GoRoute(
+            name: RoutePath.moneyWithdraw,
+            path: RoutePath.moneyWithdraw.addBasePath,
+            builder: (context, state) => MoneyWithdraw()),
+
+        ///======================= WithDraw History =======================
+
+        GoRoute(
+            name: RoutePath.withdrawHistory,
+            path: RoutePath.withdrawHistory.addBasePath,
+            builder: (context, state) => WithdrawHistory()),
       ]);
 
   static GoRouter get route => initRoute;
