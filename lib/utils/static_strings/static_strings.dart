@@ -168,6 +168,7 @@ class AppStrings {
   static const String yourBalance = "আপনার বর্তমান ব্যাল্যান্স 10 টাকা";
   static const String withdrawType = "উত্তোলনের ধরণ সিলেক্ট করুন";
   static const String instantPayment = "ইনস্ট্যান্ট পেমেন্ট";
+  static const String donateNow = "ডোনেট করুন";
 
   // static const String varified = "ভেরিফাইড";
 }

@@ -138,7 +138,9 @@ class CustomSideDrawer extends StatelessWidget {
             /// ============================ Withdrow History ===========================
 
             sideCardDesign(
-              onTap: () {},
+              onTap: () {
+                context.pushNamed(RoutePath.withdrawHistory);
+              },
               title: AppStrings.withdrawHistory,
               icon: Assets.icons.withdrowHistory.svg(),
             ),

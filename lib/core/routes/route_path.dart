@@ -36,4 +36,9 @@ class RoutePath {
 
   static const String editProfile = 'editProfile';
   static const String productDetails = 'productDetails';
+
+  /// ========================= Home Screen's 10 Button ================================
+  static const String resellingProducts = 'resellingProducts';
+  static const String productSearch = 'productSearch';
+  static const String ecommerce = 'ecommerce';
 }
